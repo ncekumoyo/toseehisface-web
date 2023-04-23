@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg bg-dark text-light">
       <div class="container">
-        <Link class="navbar-brand" to="/">
-          To See HIS Face
+        <Link class="navbar-brand  text-warning fw-bold" to="/">
+          TO SEE HIS FACE
         </Link>
         <button
           class="navbar-toggler"
@@ -21,37 +21,37 @@ const Navbar = () => {
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <Link class="nav-link active" aria-current="page" to="/">
+              <Link class="nav-link text-light active text-light" aria-current="page" to="/">
                 Home
               </Link>
             </li>
             <li class="nav-item">
-              <Link class="nav-link" to="/about">
+              <Link class="nav-link text-light" to="/about">
                 About
               </Link>
             </li>
             <li class="nav-item">
-              <Link class="nav-link" to="/studies">
+              <Link class="nav-link text-light" to="/studies">
                 Studies
               </Link>
             </li>
             <li class="nav-item">
-              <Link class="nav-link" to="/media">
+              <Link class="nav-link text-light" to="/media">
                 Media
               </Link>
             </li>
             <li class="nav-item">
-              <Link class="nav-link" to="/prayer">
+              <Link class="nav-link text-light" to="/prayer">
                 Prayer
               </Link>
             </li>
             <li class="nav-item">
-              <Link class="nav-link" to="/newsletter">
+              <Link class="nav-link text-light" to="/newsletter">
                 Newsletter
               </Link>
             </li>
             <li class="nav-item">
-              <Link class="nav-link" to="/contact">
+              <Link class="nav-link text-light" to="/contact">
                 Contact
               </Link>
             </li>

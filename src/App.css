@@ -1,5 +1,24 @@
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
+@font-face {
+  font-family: Nunito;
+  src: url("./assets/Nunito-Regular.ttf");
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url("./assets/Nunito-Bold.ttf");
+}
+
 body {
   box-sizing: border-box;
+  font-family: Nunito;
+}
+
+header {
+  height: 400px;
+  background-image: url("./assets/poster1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

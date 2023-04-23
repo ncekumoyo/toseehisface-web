@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min";
+import Home from "./components/Home";
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="/" element={null} />
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={null} />
           <Route path="/studies" element={null} />
           <Route path="/media" element={null} />
