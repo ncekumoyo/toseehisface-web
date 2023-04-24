@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min";
 import Home from "./components/Home";
+import About from "./components/About";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={null} />
+          <Route path="/about" element={<About />} />
           <Route path="/studies" element={null} />
           <Route path="/media" element={null} />
           <Route path="/newsletter" element={null} />

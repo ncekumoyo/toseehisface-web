@@ -1,11 +1,23 @@
 import { Link } from "react-router-dom";
+import logo from "../assets/Bobo.webp";
 
 const Navbar = () => {
   return (
     <nav class="navbar navbar-expand-lg bg-dark text-light">
       <div class="container">
-        <Link class="navbar-brand  text-warning fw-bold" to="/">
-          TO SEE HIS FACE
+        <Link class="navbar-brand text-sans text-warning fw-bold" to="/">
+          <div className="d-flex align-items-center">
+            <img
+              className="rounded-circle border border-warning border-5"
+              src={logo}
+              alt="logo"
+              width={70}
+              height={70}
+            />
+            <div className="ms-3">
+              TO SEE <br /> HIS FACE
+            </div>
+          </div>
         </Link>
         <button
           class="navbar-toggler"

@@ -2,23 +2,35 @@
 
 @font-face {
   font-family: Nunito;
-  src: url("./assets/Nunito-Regular.ttf");
+  src: url("./assets/Nunito-Bold.ttf");
 }
 
 @font-face {
-  font-family: Nunito;
-  src: url("./assets/Nunito-Bold.ttf");
+  font-family: PTSerif;
+  src: url("./assets/PT_Serif/PTSerif-Regular.ttf");
 }
 
 body {
   box-sizing: border-box;
-  font-family: Nunito;
+  font-family: PTSerif;
 }
 
-header {
-  height: 400px;
+.home-header {
   background-image: url("./assets/poster1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px RGBA(0, 0, 0, 0.7);
+}
+
+.text-sans {
+  font-family: Nunito;
+}
+
+.verse {
+  background-color: RGBA(255, 255, 255, 0.3);
+  border-radius: 15px;
 }

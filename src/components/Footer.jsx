@@ -5,17 +5,17 @@ const Footer = () => {
     <footer className="bg-dark text-light navbar-nav small">
       <div className="container d-flex justify-content-evenly">
         <div className="flex-grow-1 p-3">
-          <h4 className="text-warning">Contacts</h4>
+          <h4 className="text-warning text-sans">Contacts</h4>
           <p>
             To See His Face <br />
             123 Frisby Way <br />
             Oslo <br />
             Norway
           </p>
-          <p>warning@toseehisface.org</p>
+          <p className="text-warning text-sans">info@toseehisface.org</p>
         </div>
         <div className="flex-grow-1 p-3">
-          <h4 className="text-warning">Links</h4>
+          <h4 className="text-warning text-sans">Links</h4>
           <ul class="">
             <li className="nav-item">
               <Link className="nav-link" to="/">
@@ -40,14 +40,13 @@ const Footer = () => {
           </ul>
         </div>
         <div className="flex-grow-1 p-3">
-          <p className="fw-bold text-warning">
-            &copy;2023 To See His Face <br />
-            All Rights Reserved <br />
+          <p className="fw-bold text-warning text-sans">
+            &copy;2023 To See His Face | All Rights Reserved <br />
           </p>
           <p>
             Site design by: <br />
             Nceku Moyo <br />
-            <span className="fw-bold text-warning">nhmoyo7@gmail.com</span>
+            <span className="fw-bold text-warning text-sans">nhmoyo7@gmail.com</span>
           </p>
         </div>
       </div>
