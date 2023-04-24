@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
-import logo from "../assets/Bobo.webp";
+import logo from "../assets/JESUS.jpg";
 
 const Navbar = () => {
   return (
-    <nav class="navbar navbar-expand-lg bg-dark text-light">
-      <div class="container">
-        <Link class="navbar-brand text-sans text-warning fw-bold" to="/">
-          <div className="d-flex align-items-center">
+    <nav className="navbar navbar-expand-lg bg-dark text-sans text-light p-0">
+      <div className="container p-0">
+        <Link className="navbar-brand text-warning fw-bold p-0" to="/">
+          <div className="d-flex align-items-center p-2">
             <img
               className="rounded-circle border border-warning border-5"
               src={logo}
@@ -20,7 +20,7 @@ const Navbar = () => {
           </div>
         </Link>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -28,42 +28,42 @@ const Navbar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <Link class="nav-link text-light active text-light" aria-current="page" to="/">
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li className="nav-item">
+              <Link className="nav-link text-light active text-light py-4" aria-current="page" to="/">
                 Home
               </Link>
             </li>
-            <li class="nav-item">
-              <Link class="nav-link text-light" to="/about">
+            <li className="nav-item">
+              <Link className="nav-link text-light py-4" to="/about">
                 About
               </Link>
             </li>
-            <li class="nav-item">
-              <Link class="nav-link text-light" to="/studies">
+            <li className="nav-item">
+              <Link className="nav-link text-light py-4" to="/studies">
                 Studies
               </Link>
             </li>
-            <li class="nav-item">
-              <Link class="nav-link text-light" to="/media">
+            <li className="nav-item">
+              <Link className="nav-link text-light py-4" to="/media">
                 Media
               </Link>
             </li>
-            <li class="nav-item">
-              <Link class="nav-link text-light" to="/prayer">
+            <li className="nav-item">
+              <Link className="nav-link text-light py-4" to="/prayer">
                 Prayer
               </Link>
             </li>
-            <li class="nav-item">
-              <Link class="nav-link text-light" to="/newsletter">
+            <li className="nav-item">
+              <Link className="nav-link text-light py-4" to="/newsletter">
                 Newsletter
               </Link>
             </li>
-            <li class="nav-item">
-              <Link class="nav-link text-light" to="/contact">
+            <li className="nav-item">
+              <Link className="nav-link text-light py-4" to="/contact">
                 Contact
               </Link>
             </li>
