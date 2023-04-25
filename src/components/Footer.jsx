@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-dark text-light navbar-nav small">
+    <footer className="bg-dark text-light small">
       <div className="container d-flex justify-content-evenly">
         <div className="flex-grow-1 p-3">
           <h4 className="text-warning text-sans">Contacts</h4>
@@ -16,25 +16,30 @@ const Footer = () => {
         </div>
         <div className="flex-grow-1 p-3">
           <h4 className="text-warning text-sans">Links</h4>
-          <ul class="">
+          <ul class="navbar-nav">
             <li className="nav-item">
-              <Link className="nav-link" to="/">
+              <Link className="nav-link menu-link2" to="/">
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/">
+              <Link className="nav-link menu-link2" to="/about">
                 About
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/">
+              <Link className="nav-link menu-link2" to="/studies">
                 Studies
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/">
+              <Link className="nav-link menu-link2" to="/media">
                 Media
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link menu-link2" to="/prayer">
+                Prayer
               </Link>
             </li>
           </ul>

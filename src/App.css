@@ -35,10 +35,16 @@ body {
   border-radius: 15px;
 }
 
-.nav-link {
+.menu-link {
   height: 86px !important;
   width: 100px;
   text-align: center;
+}
+
+.menu-link2 {
+  width: 70px;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 .nav-link:hover,

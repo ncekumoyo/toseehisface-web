@@ -33,37 +33,37 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link className="nav-link text-light active text-light py-4" aria-current="page" to="/">
+              <Link className="nav-link menu-link text-light active text-light py-4" aria-current="page" to="/">
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-light py-4" to="/about">
+              <Link className="nav-link menu-link text-light py-4" to="/about">
                 About
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-light py-4" to="/studies">
+              <Link className="nav-link menu-link text-light py-4" to="/studies">
                 Studies
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-light py-4" to="/media">
+              <Link className="nav-link menu-link text-light py-4" to="/media">
                 Media
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-light py-4" to="/prayer">
+              <Link className="nav-link menu-link text-light py-4" to="/prayer">
                 Prayer
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-light py-4" to="/newsletter">
+              <Link className="nav-link menu-link text-light py-4" to="/newsletter">
                 Newsletter
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-light py-4" to="/contact">
+              <Link className="nav-link menu-link text-light py-4" to="/contact">
                 Contact
               </Link>
             </li>
