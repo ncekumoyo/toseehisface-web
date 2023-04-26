@@ -2,8 +2,16 @@ import { Link } from "react-router-dom";
 import bible from "../assets/bible.jpeg";
 import news from "../assets/tablet.jpeg";
 import prayer from "../assets/prayer.jpg";
+import { AppContext } from "../App";
+import { useContext, useEffect } from "react";
 
 const Home = () => {
+  const { setActive } = useContext(AppContext);
+
+  useEffect(() => {
+    setActive("home");
+  }, [setActive]);
+
   return (
     <>
       <header className="home-header">

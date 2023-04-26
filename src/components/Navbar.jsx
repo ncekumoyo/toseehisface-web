@@ -1,7 +1,12 @@
 import { Link } from "react-router-dom";
 import logo from "../assets/JESUS.jpg";
+import { AppContext } from "../App";
+import { useContext } from "react";
 
 const Navbar = () => {
+  const { active } = useContext(AppContext);
+  let linkCss = "nav-link menu-link text-light text-light py-4";
+
   return (
     <nav className="navbar navbar-expand-lg bg-dark text-sans text-light p-0">
       <div className="container p-0">
@@ -33,37 +38,37 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link className="nav-link menu-link text-light active text-light py-4" aria-current="page" to="/">
+              <Link className={active === "home" ? linkCss + " active" : linkCss} aria-current="page" to="/">
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link menu-link text-light py-4" to="/about">
+              <Link className={active === "about" ? linkCss + " active" : linkCss} to="/about">
                 About
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link menu-link text-light py-4" to="/studies">
+              <Link className={active === "studies" ? linkCss + " active" : linkCss} to="/studies">
                 Studies
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link menu-link text-light py-4" to="/media">
+              <Link className={active === "media" ? linkCss + " active" : linkCss} to="/media">
                 Media
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link menu-link text-light py-4" to="/prayer">
+              <Link className={active === "prayer" ? linkCss + " active" : linkCss} to="/prayer">
                 Prayer
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link menu-link text-light py-4" to="/newsletter">
+              <Link className={active === "newsletter" ? linkCss + " active" : linkCss} to="/newsletter">
                 Newsletter
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link menu-link text-light py-4" to="/contact">
+              <Link className={active === "contact" ? linkCss + " active" : linkCss} to="/contact">
                 Contact
               </Link>
             </li>

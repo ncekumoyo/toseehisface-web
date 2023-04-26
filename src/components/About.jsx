@@ -3,8 +3,16 @@ import edem from "../assets/Bobo.webp";
 import zo from "../assets/cv pic - Copy.webp";
 import amara from "../assets/amara_edited.webp";
 import clock from "../assets/clock.png";
+import { AppContext } from "../App";
+import { useContext, useEffect } from "react";
 
 const About = () => {
+  const { setActive } = useContext(AppContext);
+
+  useEffect(() => {
+    setActive("about");
+  }, [setActive]);
+
   return (
     <>
       <header>

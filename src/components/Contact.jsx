@@ -1,4 +1,13 @@
+import { AppContext } from "../App";
+import { useContext, useEffect } from "react";
+
 const Contact = () => {
+  const { setActive } = useContext(AppContext);
+
+  useEffect(() => {
+    setActive("contact");
+  }, [setActive]);
+
   return (
     <>
       <header>
