@@ -16,7 +16,7 @@ const Footer = () => {
         </div>
         <div className="flex-grow-1 p-3">
           <h4 className="text-warning text-sans">Links</h4>
-          <ul class="navbar-nav">
+          <ul className="navbar-nav">
             <li className="nav-item">
               <Link className="nav-link menu-link2" to="/">
                 Home

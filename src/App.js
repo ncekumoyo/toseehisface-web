@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
@@ -11,30 +11,23 @@ import Media from "./components/Media";
 import Newsletter from "./components/Newsletter";
 import Prayer from "./components/Prayer";
 import Contact from "./components/Contact";
-import { createContext } from "react";
-
-export const AppContext = createContext();
 
 function App() {
-  const [active, setActive] = useState("home");
-
   return (
     <React.StrictMode>
-      <AppContext.Provider value={{ active, setActive }}>
-        <BrowserRouter>
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/studies" element={<Studies />} />
-            <Route path="/media" element={<Media />} />
-            <Route path="/newsletter" element={<Newsletter />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/prayer" element={<Prayer />} />
-          </Routes>
-          <Footer />
-        </BrowserRouter>
-      </AppContext.Provider>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/studies" element={<Studies />} />
+          <Route path="/media" element={<Media />} />
+          <Route path="/newsletter" element={<Newsletter />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/prayer" element={<Prayer />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </React.StrictMode>
   );
 }

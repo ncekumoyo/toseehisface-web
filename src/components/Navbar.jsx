@@ -1,16 +1,11 @@
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import logo from "../assets/JESUS.jpg";
-import { AppContext } from "../App";
-import { useContext } from "react";
 
 const Navbar = () => {
-  const { active } = useContext(AppContext);
-  let linkCss = "nav-link menu-link text-light text-light py-4";
-
   return (
     <nav className="navbar navbar-expand-lg bg-dark text-sans text-light p-0">
       <div className="container p-0">
-        <Link className="navbar-brand text-warning fw-bold p-0" to="/">
+        <Link activeClassName="active" className="navbar-brand text-warning fw-bold p-0" to="/">
           <div className="d-flex align-items-center p-2">
             <img
               className="rounded-circle border border-warning border-5"
@@ -38,39 +33,44 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link className={active === "home" ? linkCss + " active" : linkCss} aria-current="page" to="/">
+              <NavLink
+                activeClassName="active"
+                className="nav-link menu-link text-light text-light py-4"
+                aria-current="page"
+                to="/"
+              >
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className={active === "about" ? linkCss + " active" : linkCss} to="/about">
+              <NavLink activeClassName="active" className="nav-link menu-link text-light py-4" to="/about">
                 About
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className={active === "studies" ? linkCss + " active" : linkCss} to="/studies">
+              <NavLink activeClassName="active" className="nav-link menu-link text-light py-4" to="/studies">
                 Studies
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className={active === "media" ? linkCss + " active" : linkCss} to="/media">
+              <NavLink activeClassName="active" className="nav-link menu-link text-light py-4" to="/media">
                 Media
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className={active === "prayer" ? linkCss + " active" : linkCss} to="/prayer">
+              <NavLink activeClassName="active" className="nav-link menu-link text-light py-4" to="/prayer">
                 Prayer
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className={active === "newsletter" ? linkCss + " active" : linkCss} to="/newsletter">
+              <NavLink activeClassName="active" className="nav-link menu-link text-light py-4" to="/newsletter">
                 Newsletter
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className={active === "contact" ? linkCss + " active" : linkCss} to="/contact">
+              <NavLink activeClassName="active" className="nav-link menu-link text-light py-4" to="/contact">
                 Contact
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>
