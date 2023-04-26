@@ -70,7 +70,7 @@ const Home = () => {
                 <h2 className="lead">Prayer</h2>
                 <hr />
                 <div className="card-body">
-                  <h3 className="display-6 text-sans">Daily Devotions</h3>
+                  <h3 className="display-6 text-sans">Prayer Requests</h3>
                   <img alt="study" src={prayer} className="img-fluid w-100" />
                   <p className="my-3">
                     The disciples of Jesus expected to see their Lord coming in the clouds of heaven in their time;
