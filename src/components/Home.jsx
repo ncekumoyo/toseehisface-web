@@ -101,7 +101,7 @@ const Home = () => {
                 every truth they know, and make the necessary character preparation that will allow them to stand in a
                 time of crisis prior to the return of Christ.
               </p>
-              <Link to="/" className="btn btn-warning ms-auto">
+              <Link to="/media" className="btn btn-warning ms-auto">
                 See more videos
               </Link>
             </div>

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import bible from "../assets/bible.jpeg";
 
 const Studies = () => {
@@ -64,7 +65,7 @@ const Studies = () => {
         <div className="container">
           <div className="py-5 px-2">
             <h1 className="display-4 text-sans text-warning text-shadow">
-              Revival Messages <br /> and <br /> Bible Studies
+              Revival Messages <br /> and Bible Studies
             </h1>
             <p className="lead col-md-6  my-3 verse p-3">
               <hr />
@@ -80,14 +81,14 @@ const Studies = () => {
         <div className="container d-flex">
           <div className="row">
             {series.map((study) => (
-              <div className="col-md-4 p-3" key={study.id}>
-                <div className="px-2">
-                  <div className="card-body">
+              <div className="col-md-6 col-lg-4 p-3" key={study.id}>
+                <Link className="text-dark card-link" to="/studies">
+                  <div className="p-2">
                     <h2 className="text-sans lead">{study.title}</h2>
                     <img alt="study" src={study.picture} className="img-fluid w-100" />
                     <p className="my-3">{study.summary}</p>
                   </div>
-                </div>
+                </Link>
               </div>
             ))}
           </div>
