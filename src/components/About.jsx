@@ -1,4 +1,3 @@
-import group from "../assets/group.png";
 import edem from "../assets/Bobo.webp";
 import zo from "../assets/cv pic - Copy.webp";
 import amara from "../assets/amara_edited.webp";
@@ -7,24 +6,17 @@ import clock from "../assets/clock.png";
 const About = () => {
   return (
     <>
-      <header>
+      <header className="about-header">
         <div className="container">
-          <div className="row">
-            <div className="col-md-6">
-              <div className="p-3">
-                <h1 className="display-4 text-sans ">About Us</h1>
-                <p className="lead">
-                  <span className="text-warning fw-bold">To See HIS Face Ministries International</span> - We stand on
-                  Biblical truth and its principles. Our goal is to help people prepare for the second coming of Jesus.
-                  We believe that Christ Character form within the believer will enable them to see Him face to face.
-                </p>
-              </div>
-            </div>
-            <div className="col-md-6 d-flex align-items-center">
-              <div className="p-3">
-                <img src={group} alt="bible" className="w-100" />
-              </div>
-            </div>
+          <div className="py-5 px-2">
+            <h1 className="display-4 text-sans text-warning text-shadow">About Us</h1>
+            <p className="lead col-md-6  my-3 verse p-3">
+              <hr />
+              <span className=" fw-bold">To See HIS Face Ministries International</span> - We stand on Biblical truth
+              and its principles. Our goal is to help people prepare for the second coming of Jesus. We believe that
+              Christ Character form within the believer will enable them to see Him face to face.
+              <hr />
+            </p>
           </div>
         </div>
       </header>

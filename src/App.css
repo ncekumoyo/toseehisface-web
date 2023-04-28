@@ -10,20 +10,37 @@
   src: url("./assets/PT_Serif/PTSerif-Regular.ttf");
 }
 
+@font-face {
+  font-family: PTSerif;
+  src: url("./assets/PT_Serif/PTSerif-Bold.ttf");
+  font-weight: bold;
+}
+
 body {
   box-sizing: border-box;
   font-family: PTSerif;
 }
 
-.home-header {
-  background-image: url("./assets/poster1.jpg");
+header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+.home-header {
+  background-image: url("./assets/poster1.jpg");
+}
+
+.studies-header {
+  background-image: url("./assets/study.webp");
+}
+
+.about-header {
+  background-image: url("./assets/group.png");
+}
+
 .text-shadow {
-  text-shadow: 2px 2px RGBA(0, 0, 0, 0.7);
+  text-shadow: 3px 3px RGBA(0, 0, 0, 0.7);
 }
 
 .text-sans {
@@ -31,7 +48,7 @@ body {
 }
 
 .verse {
-  background-color: RGBA(255, 255, 255, 0.3);
+  background-color: RGBA(255, 255, 255, 0.9);
   border-radius: 15px;
 }
 
